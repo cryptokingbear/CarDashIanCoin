@@ -1,5 +1,5 @@
 // Copyright (c) 2018, The TurtleCoin Developers
-// Copyright (c) 2019, Car Dash Ian Coin
+// Copyright (c) 2019, Car Dash Ian Coin Developers
 // Please see the included LICENSE file for more information.
 
 #pragma once
