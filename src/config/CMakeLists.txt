@@ -1,3 +1,5 @@
+// Copyright (c) 2019, Car Dash Ian Coin Developers
+
 # Build statically
 add_definitions(-DSTATICLIB)
 
