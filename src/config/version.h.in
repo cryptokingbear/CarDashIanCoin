@@ -1,3 +1,5 @@
+// Copyright (c) 2019, Car Dash Ian Coin Developers
+
 #define STR_HELPER(x) #x
 #define STR(x) STR_HELPER(x)
 
