@@ -49,7 +49,7 @@ static_assert(EMISSION_SPEED_FACTOR_V2 <= 8 * sizeof(uint64_t), "Bad EMISSION_SP
 const uint64_t EMISSION_SPEED_FACTOR_V2_HEIGHT               = 50000; // nothing change at 50k
 
 
-const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(1000000000000000000);
+const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(1000000000000000000); //Low 10% 
 
 
 
