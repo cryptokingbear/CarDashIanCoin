@@ -61,7 +61,7 @@ namespace WalletConfig
     const uint64_t minimumSend = 100;
 
     /* Is a mixin of zero disabled on your network? */
-    const bool mixinZeroDisabled = true;
+    const bool mixinZeroDisabled = false;
 
     /* If a mixin of zero is disabled, at what height was it disabled? E.g.
        fork height, or 0, if never allowed. This is ignored if a mixin of
