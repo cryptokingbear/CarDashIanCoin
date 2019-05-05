@@ -1,4 +1,4 @@
-
+// Copyright (c) 2019, Car Dash Ian Coin Developers
 
 #pragma once
 
