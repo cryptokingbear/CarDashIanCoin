@@ -22,15 +22,15 @@ namespace CryptoNote {
 namespace parameters {
 
 const uint64_t DIFFICULTY_TARGET                             = 60; // seconds
-const uint64_t DIFFICULTY_TARGET_V2                          = DIFFICULTY_TARGET; // seconds
+const uint64_t DIFFICULTY_TARGET_V2                          = DIFFICULTY_TARGET; 
 
 /* Height to swap to DIFFICULTY_TARGET_V2 */
-const uint64_t DIFFICULTY_TARGET_V2_HEIGHT                   = 50000; // nothing change at 50k
+const uint64_t DIFFICULTY_TARGET_V2_HEIGHT                   = 50000; 
 
 const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0xe431ed4;  // carDi
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0xe431ed4;  // carDi Address 
 const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 25;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 6 * DIFFICULTY_TARGET;
 
@@ -39,17 +39,17 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 11;
 // MONEY_SUPPLY - total number coins to be generated
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(10000000000000000000); // 100 Billion
 
-const uint32_t EMISSION_SPEED_FACTOR                         = 20;
-const uint32_t EMISSION_SPEED_FACTOR_V2                      = EMISSION_SPEED_FACTOR; // nothing change at 50k
+const uint32_t EMISSION_SPEED_FACTOR                         = 23;   //Changed from 20 to decrease Block reward
+const uint32_t EMISSION_SPEED_FACTOR_V2                      = EMISSION_SPEED_FACTOR; 
 
 static_assert(EMISSION_SPEED_FACTOR    <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 static_assert(EMISSION_SPEED_FACTOR_V2 <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 /* Height to swap to EMISSION_SPEED_FACTOR_V2 */
-const uint64_t EMISSION_SPEED_FACTOR_V2_HEIGHT               = 50000; // nothing change at 50k
+const uint64_t EMISSION_SPEED_FACTOR_V2_HEIGHT               = 50000; 
 
 
-const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(1000000000000000000); //Low 10% 
+const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(1000000000000000000); 
 
 
 
@@ -61,7 +61,7 @@ static_assert(sizeof(GENESIS_COINBASE_TX_HEX)/sizeof(*GENESIS_COINBASE_TX_HEX) !
 const uint64_t GENESIS_BLOCK_TIMESTAMP                       = 1549813997;
 
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
-const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 100000; //size of block (bytes) after which reward for block calculated using block size
+const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 100000; 
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2  = 20000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 10000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
@@ -72,11 +72,11 @@ const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
 const uint64_t MINIMUM_FEE                                   = UINT64_C(10000); // 0.0001
 
 //This section defines our minimum and maximum mixin counts required for transactions 
-const uint64_t MINIMUM_MIXIN_V0                              = 0;
+const uint64_t MINIMUM_MIXIN_V0                              = 0;   
 const uint64_t MAXIMUM_MIXIN_V0                              = 3;
 
 //The mixin to use by default with zedwallet and turtle-service 
-const uint64_t DEFAULT_MIXIN_V0                              = 3; // for privacy
+const uint64_t DEFAULT_MIXIN_V0                              = 3; 
 
 const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(0);
 
@@ -211,8 +211,7 @@ const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 };
 
 const char* const SEED_NODES[] = {
-  "207.180.230.72:19912",// Germany Seed Node Contabo
-  "13.52.54.8:19912", // California Amazon AWS Server
+    "13.52.54.8:19912", // California Amazon AWS Server
   "52.199.2.226:19912", // Tokyo Amazon AWS Server
 };
 } 
