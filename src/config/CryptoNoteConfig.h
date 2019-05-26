@@ -211,7 +211,7 @@ const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 };
 
 const char* const SEED_NODES[] = {
-    "13.52.54.8:19912", // California Amazon AWS Server
+    "13.52.68.189:19912", // California Amazon AWS Server
   "52.199.2.226:19912", // Tokyo Amazon AWS Server
 };
 } 
